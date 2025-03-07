@@ -51,11 +51,13 @@ main {
     color: black;
 }
 
-.intro-container h1 {
+.custom-heading {
     line-height: 70px;
-    
-    font-size: 3.5rem;
     text-align: center;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 46px
+    
 }
 
 .intro-container img {
