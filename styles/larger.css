@@ -17,7 +17,13 @@
         align-items: center;
         gap: 150px;
     }
-     
+    .custom-heading {
+             line-height: 70px;
+             text-align: center;
+             font-weight: bolder;
+             font-style: normal;
+             font-size: 46px
+         }
     header 
     {
         width: 100%;
