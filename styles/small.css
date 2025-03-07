@@ -1,0 +1,299 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    /* - # (primary) - #FFD700 (secondary) - #964B00 (accent) - #FFFFFF (background) */
+    --primary-color:#F7C5CC;
+    --secondary-color: #ffd700;
+    --accent-color1: #964B00;
+}
+
+body {
+    font-family: "Barlow Condensed", sans-serif;
+    background-color: var(--primary-color);
+    font-weight: 400;
+    font-style: normal;
+}
+h1 {
+   
+    font-weight: 100;
+    font-style: normal;
+    font-size: 100px;
+}
+
+main {
+    padding: 15px;
+}
+
+
+
+
+
+#menu {
+    /* font-size: 26px; */
+    line-height: 100px;
+    padding-right: 10px;
+    cursor: pointer;
+    transition: 10s ease-in; 
+}
+.intro-container {
+    width: 100%;
+    height: 100px;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: black;
+}
+
+.intro-container h1 {
+    line-height: 70px;
+    
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.intro-container img {
+    border-radius: 70%;
+    padding: 5px;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+
+.nav-links {
+    display: none;
+    background-color: var(--accent-color1);
+    width: 200px;
+    height: 300px;
+    text-align: center;
+    padding-top: 17px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    transition: 15s ease; 
+}
+
+.nav-links a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 12px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.nav-links a:hover {
+    color: #c9b89f;
+}
+
+.close-menu {
+    font-size: 26px;
+    color: white;
+    position: relative;
+    top: 0;
+    left: -40%;
+}
+
+
+
+.tag-one {
+    height: 350px;
+    box-shadow: 2px 2px 5px #e1e1ea, -2px -2px 5px #e1e1ea;
+    border-radius: 8px;
+}
+
+.tag-one h2 {
+    background-color: var(--accent-color1);
+    text-align: center;
+    padding: 15px;
+    color: white;
+   
+    border-radius: 7px 7px 0 0;
+}
+
+.tag-one .course-taken {
+    font-size: .9rem;
+    padding: 5px;
+    padding-left: 15px;
+    margin-top: 10px;
+}
+
+.tag-one ul {
+    list-style-type: none;
+}
+
+
+
+.tag-two {
+    text-align: center;
+    height: 350px;
+    margin-top: 20px;
+    box-shadow: 2px 2px 5px #e1e1ea, -2px -2px 5px #e1e1ea;
+    border-radius: 9px;
+}
+
+.tag-two h2 {
+    background-color: var(--accent-color1);
+    color: white;
+    text-align: center;
+    padding: 15px;
+  
+    border-radius: 7px 7px 0 0;
+
+}
+
+.tag-two img {
+    padding: 15px 0 3px 0;
+    width: 250px;
+    height: auto;
+    margin-top: 16px;
+}
+
+
+
+
+.tag-three {
+    box-shadow: 2px 2px 5px #e1e1ea, -2px -2px 5px #e1e1ea;
+    margin-top: 12px;
+
+}
+
+.tag-three h2 {
+    padding: 12px;
+    color: white;
+    background-color: var(--accent-color1);
+    text-align: center;
+    
+    border-radius: 7px 7px 0 0;
+
+}
+
+.btn-container {
+    text-align: center;
+}
+
+.btn-container button {
+    padding: 5px 12.2%;
+    gap: 3px;
+    margin: 10px 0;
+    border-radius: 3px;
+    background-color: var(--accent-color1);
+    color: white;
+    border: none;
+
+    cursor: pointer;
+
+}
+
+.btn-container button:hover {
+    background-color: rgb(42, 39, 39);
+}
+
+.courses-container {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    gap: 10px;
+}
+
+.courses-container span {
+    padding: 10px;
+    color: white;
+    background-color: var(--accent-color1);
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.courses-container .incomplete {
+    background-color: #c9b89f;
+    color: black;
+}
+
+.total-credit {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+dialog {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+}
+
+::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+
+.footer-nav {
+    height: 110px;
+    margin-top: 20px;
+    background-color: var(--secondary-color);
+    color: black;
+    padding: 13px;
+    text-align: center;
+}
+
+#currentYear {
+    display: block;
+    padding: 2px;
+}
+
+.flag-name {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 5px;
+    text-align: center;
+    padding: 3px;
+}
+
+#currentYear,
+.flag-name {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.flag-name img {
+    width: 30px;
+    height: auto;
+}
+
+
+#lastModified {
+    padding-top: 14px;
+    font-weight: 600;
+}
+
+
+

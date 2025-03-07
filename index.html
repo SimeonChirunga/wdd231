@@ -1,11 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="en-US">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>initial test</title>
+    <meta name="author" content="Simeon Chirunga">
+    <meta name="description" content="Home Page for WDD231 - Web FrontEnd-Development 1">
+    <title>WDD 231 - Course Home Page | Simeon Chirunga</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css" media="screen">
+    <link rel="stylesheet" href="styles/small.css" media="screen">
+    <link rel="stylesheet" href="styles/larger.css" media="screen">
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/course-list-array.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
 </head>
+
 <body>
+
+    <div class="intro-container">
+        <img src="images/profile.webp" alt="Photo of Simeon Chirunga">
+        <h1>Simeon Chirunga</h1>
+        <span id="menu">☰</span>
+    </div>
+
+    <header>
+        <nav class="nav-links">
+            <a href="https://simeonchirunga.github.io/wdd231/#"> <span class="close-menu">✖</span> </a>
+            <a href="https://simeonchirunga.github.io/wdd231/index.html">Home</a>
+            <a href="https://simeonchirunga.github.io/wdd231/chamber/index.html">Chamber</a>
+            <a href="https://github.com/simeonchirunga">GitHub Profile</a>
+            <a href="https://www.linkedin.com/in/simeonchirunga">LinkedIn</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-container">
+            <section class="tag-one">
+                <h2>Course Work</h2>
+                <ul>
+                    <li class="course-taken">📌 WDD231 Home Page</li>
+                    <li class="course-taken">📌 Chamber of Commerce Project</li>
+                    <li class="course-taken">📌 Weekly Quizzes</li>
+                    <li class="course-taken">📌 Weekly Group Discuss</li>
+                    <li class="course-taken">📌 Final Project</li>
+                    <li class="course-taken">📌 Final Exam</li>
+                </ul>
+            </section>
+
+            <section class="tag-two">
+                <h2>Gweru, Zimbabwe</h2>
+                <img src="images/jacaranda.webp"  alt="Jacaranda Tree">
+                <p>Jacaranda</p>
+            </section>
+
+            <section class="tag-three">
+                <h2>Web and Computer Programming Certificate</h2>
+
+                <div class="btn-container">
+                    <button class="all-course">All</button>
+                    <button class="cse-course">CSE</button>
+                    <button class="wdd-course">WDD</button>
+                </div>
+                <hr>
+                <div class="courses-container">
+                    <span class="completed">CSE 110</span>
+                    <span class="completed">WDD 130</span>
+                    <span class="completed">CSE 111</span>
+                    <span class="completed">CSE 210</span>
+                    <span class="completed">WDD 131</span>
+                    <span class="incomplete">WDD 231</span>
+                </div>
+            </section>
+
+        </div>
+        <span class="total-credit"><strong> Total Credit Required: </strong> 12</span>
+        <dialog id="course-details"></dialog>
+    </main>
+
+    <footer class="footer-nav">
+
+        <span id="year"> <script></script>    </span>
+
+        <div class="flag-name">
+            <p> ♨️ Simeon Chirunga ♨️ Gweru, Zimbabwe </p>
+            <img src="images/zimbabwe-flag.webp" alt="Zimbabwe Flag" width="3840" height="2160" loading="lazy">
+        </div>
+
+        <p id="lastModified">Last Modified
+            <script src="scripts/dates.js"></script>
+        </p>
+
+    </footer>
     
+
+
+
+
 </body>
+
 </html>
