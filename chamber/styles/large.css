@@ -1,0 +1,138 @@
+@media (min-width: 640px) {
+    .header-container nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .close-menu {
+        display: none;
+    }
+
+
+
+
+    .header-container nav {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        margin: 0 auto;
+        height: 55px;
+        background-color: transparent;
+        width: 50%;
+        height: 55px;
+        padding-right: 80px;
+        color: white;
+
+    }
+
+
+    .header-container nav a {
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.09rem;
+        padding-top: 0;
+        margin-top: 4px;
+
+    }
+
+
+    #navmenu {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        margin: 0 auto;
+        height: 55px;
+        background-color: transparent;
+        color: black;
+        width: 50%;
+    }
+
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+
+
+
+
+
+    #navmenu {
+        max-width: 700px;
+        width: 80%;
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: 639px) {
+
+    /* styles for mobile screens */
+    #menu {
+        display: block;
+        line-height: 30px;
+    }
+
+
+
+    #navmenu a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #333;
+    }
+
+    #navmenu a:hover {
+        background-color: #ccc;
+    }
+
+    .close-menu {
+        display: block;
+    }
+
+    #navmenu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        top: 40px;
+    }
+}
+
+@media only screen and (min-width: 56.25em) {
+    html {
+        font-size: 100%;
+    }
+
+    .header-nav ul {
+        display: flex;
+
+    }
+
+    .nav-list {
+        display: flex;
+    }
+
+
+
+    .member-card {
+        width: 100%;
+    }
+
+    .list .member-card {
+        gap: 3rem;
+    }
+
+    .list .member-card .member-info-box {
+        gap: 2rem;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 2.5rem;
+        grid-template-rows: auto;
+    }
+
+}
