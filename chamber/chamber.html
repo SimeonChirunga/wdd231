@@ -11,19 +11,17 @@
     <meta property="og:title" content="Gweru Business Chamber ">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://simeonchirunga.github.io/wdd231/chamber/directory.html">
-    <meta property="og:image" content="https://github.com/simeonchirunga/wdd231/favicon.ico">
+    <meta property="og:image" content="https://github.com/simeonchirunga/wdd231/blob/main/chamber/images/hero.WEBP">
     <meta property="og:site_name" content="Gweru Business Chamber">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,100&family=Playfair+Display:ital@0;1&display=swap"
         rel="stylesheet" media="screen">
     <script src="scripts/index.js" defer></script>
-    <!-- <script src="scripts/common.js"></script> -->
 
 </head>
 
@@ -31,37 +29,38 @@
 
 
     <header>
-        <img src="images/gcc.webp" alt="Site Logo" width="80">
-        <div class="name">
-            <span id="name1">Gweru Chamber of Commerce</span>
-            <span id="name2">City of Progress</span>
-        </div>
-        
-        <nav>
-            <button id="menu-button">☰</button>
-            <ul>
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
-                <li><a href="discover.html">Discover</a></li>
+        <div class="header-container">
+            <div class="theader">
+                <img src="images/gcc.jpg" alt="Chamber of Commerce Logo" width="80">
+                <div class="name">
+                    <span id="name1">Gweru</span>
+                    <span id="name2">Chamber of Commerce</span>
+                </div>
+                
+                
+            <span id="menu">☰</span>
+            <nav id="navmenu">
+                <span class="close-menu">&times;</span>
+
+                <a href="#">Home</a>
+                <a href="#">Directory</a>
+                <a href="#">Join</a>
+                <a href="#">Discover</a>
                 <span id="half-circle"></span>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <div class="hero">
-            <picture>
-                <source srcset="images/gweru-hero.webp" media="(max-width: 600px)">
-                <source srcset="images/gweru-hero.webp" media="(max-width: 1000px)">
-                <img src="images/gweru-hero.webp" alt="hero image">
-            </picture>
-            <div class="keynote-ticket">
-            
-                <button>Find services</button>
-            </div>
-            
+            </nav>
         </div>
+    </header>
+
+    <div class="banner-hero">
+        <img src="images/gweru-hero.webp" width="1230" alt="Hero Image">
+        <div class="keynote-ticket">
+            <p>test</p>
+            <button>Find services</button>
+        </div>
+
+    </div>
+
+    <main>
         <section class="intro-section">
             <h1>Gweru Business Directory</h1>
             <p>
@@ -73,27 +72,27 @@
                 businesses in our region, this is the right place.
             </p>
         </section>
-
+    
         <section class="views-button-section">
             <button role="button" id="grid-view">Grid view</button>
             <button role="button" id="list-view">List view</button>
         </section>
-
+    
         <section class="member-card-section"></section>
     </main>
-
+    
     <footer class="footer">
         <div class="contact-box">
-            <p class="footer-captions">Gweru Chamber of Commerce</p>
-
-            <p>No. 45 Lingfield Gweru </p>
-            <p>Midlands Province</p>
-            <p>Zimbabwe</p>
-            <p>gweruchamberofcommerce@gmail.com</p>
-            <p>+263 777285306</p>
-
+            <p class="footer-captions">Gweru Chanber of Commerce</p>
+            
+                <p>No. 45 Lingfield Gweru </p>
+                <p>Midlands Province</p>
+                <p>Zimbabwe</p>
+                <p>gweruchamberofcommerce@gmail.com</p>
+                <p>+263 777285306</p>
+            
         </div>
-
+       
         <div class="footer-socials">
             <p class="footer-captions">Stay Connected</p>
             <nav class="sociallinks">
@@ -106,18 +105,18 @@
                 <a href="https://twitter.com">
                     <img src="images/twitter.webp" alt="Twitter">
                 </a>
-
+            
             </nav>
-
+            
         </div>
         <div class="copyright-box">
-            <p>WDD231 Class Project</p>
-            <p>Simeon Chirunga</p>
-            <p>© <span id="year"></span> Gweru Chamber of Commerce</p>
-            <p id="lastModified"></p>
-
+                <p>WDD231 Class Project</p>
+                <p>Simeon Chirunga</p> 
+                <p>©  <span id="year"></span> Gweru Chamber of Commerce</p>
+                <p id="lastModified">Last Modified </p>
+    
         </div>
     </footer>
-</body>
-
-</html>
+    </body>
+    
+    </html>

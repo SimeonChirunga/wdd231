@@ -1,138 +1,114 @@
-@media (min-width: 640px) {
-    .header-container nav ul {
-        display: flex;
-        justify-content: center;
-    }
+@media only screen and (min-width: 38rem) {
 
-    #menu {
-        display: none;
-    }
-
-    .close-menu {
-        display: none;
-    }
-
-
-
-
-    .header-container nav {
-        display: flex;
-        position: relative;
-        justify-content: space-between;
+    /*Limit the overall page */
+    main {
+        max-width: 1200px;
         margin: 0 auto;
-        height: 55px;
-        background-color: transparent;
-        width: 50%;
-        height: 55px;
-        padding-right: 80px;
-        color: white;
+    }
 
+    /*Navagation goes here*/
+    header {
+        grid-template-columns: 50px auto auto;
+    }
+
+    nav {
+        justify-self: end;
+    }
+    nav.sociallinks {
+       justify-self: left;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    nav ul,
+    nav ul.open {
+        /*remove defaults from small*/
+        position: initial;
+        width: auto;
+        background-color: unset;
+        /*new*/
+        display: flex;
     }
 
 
-    .header-container nav a {
+    nav ul li a:hover {
+        background-color: unset;
+        color: white;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-decoration-color: #04261a;
+    }
+
+    div.hero a {
+        top: 20%;
+        left: 15%;
+    }
+
+    div.cards {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+
+    section.events {
+        grid-column: 1 / span 2;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer section:nth-child(3) {
+        grid-column: 1 / span 2;
         display: flex;
         justify-content: space-around;
-        font-size: 1.09rem;
-        padding-top: 0;
-        margin-top: 4px;
-
-    }
-
-
-    #navmenu {
-        display: flex;
-        position: relative;
-        justify-content: space-between;
-        margin: 0 auto;
-        height: 55px;
-        background-color: transparent;
-        color: black;
-        width: 50%;
-    }
-
-}
-
-@media (min-width: 640px) and (max-width: 1023px) {
-
-
-
-
-
-    #navmenu {
-        max-width: 700px;
-        width: 80%;
-        padding-right: 40px;
-    }
-}
-
-@media (max-width: 639px) {
-
-    /* styles for mobile screens */
-    #menu {
-        display: block;
-        line-height: 30px;
     }
 
 
 
-    #navmenu a {
-        display: block;
-        padding: 10px;
-        text-decoration: none;
-        color: #333;
-    }
-
-    #navmenu a:hover {
-        background-color: #ccc;
-    }
-
-    .close-menu {
-        display: block;
-    }
-
-    #navmenu ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        position: relative;
-        top: 40px;
-    }
-}
-
-@media only screen and (min-width: 56.25em) {
-    html {
-        font-size: 100%;
-    }
-
-    .header-nav ul {
-        display: flex;
-
-    }
-
-    .nav-list {
-        display: flex;
-    }
-
-
-
-    .member-card {
-        width: 100%;
-    }
-
-    .list .member-card {
-        gap: 3rem;
-    }
-
-    .list .member-card .member-info-box {
-        gap: 2rem;
-    }
-
-    .grid {
+    /*Discover goes here*/
+    div.discover {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        gap: 2.5rem;
-        grid-template-rows: auto;
+        grid-template-columns: 1fr 2fr;
     }
 
+    section.gallery figure {
+        max-width: 600px;
+    }
+
+    section.gallery img:hover {
+        box-shadow: 0 0 10px #333;
+        border-radius: 12px;
+    }
+
+
+    /*Discover goes here*/
+    div.join {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+        .member-card {
+            width: 100%;
+        }
+    
+        .list .member-card {
+            gap: 3rem;
+        }
+    
+        .list .member-card .member-info-box {
+            gap: 2rem;
+        }
+    
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+            grid-template-rows: auto;
+        }
+
+
 }
+
+/*end media query*/

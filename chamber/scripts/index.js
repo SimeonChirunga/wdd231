@@ -1,27 +1,20 @@
-"use strict";
-document.addEventListener("DOMContentLoaded", function () {
-    // Get the current year
-    const currentYear = new Date().getFullYear();
 
-    // Update the year element
-    const yearElement = document.getElementById("year");
-    if (yearElement) {
-        yearElement.textContent = currentYear;
-    }
 
-    // Get the current date and time
-    const currentDate = new Date();
+const menubutton = document.querySelector("#menu-button");
+const menuitems = document.querySelector("nav ul");
 
-    // Format the date as needed
-    const formattedDate = currentDate.toLocaleString();
-
-    // Update the last modified date element
-    const lastModifiedElement = document.getElementById("lastModified");
-    if (lastModifiedElement) {
-        lastModifiedElement.textContent = `Last Modified: ${formattedDate}`;
-    }
+menubutton.addEventListener("click", (e) => {
+    e.stopPropagation(); // Prevent event from bubbling up
+    menubutton.classList.toggle("open");
+    menuitems.classList.toggle("open");
 });
 
+document.addEventListener("click", (e) => {
+    if (!menubutton.contains(e.target) && !menuitems.contains(e.target)) {
+        menubutton.classList.remove("open");
+        menuitems.classList.remove("open");
+    }
+});
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -56,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     memberDiv.classList.add("member-card");
                     memberDiv.innerHTML = `
                     <p>${member.name}</p>
-                    <img src="${member.image}" alt="${member.name} logo" width="100px" height="100px">`;
+                    <img src="${member.image}" alt="${member.name} logo" width=50% >`;
                     spotlightContainer.appendChild(memberDiv);
                 });
             })
@@ -99,7 +92,7 @@ function displayChamberMembers() {
                 <p>${member.phone}</p>
                 <a href="${member.website}">${member.website.slice(8)}</a>
                 <img src="${member.membershipLevel
-                }" alt="" width="45" height="60">
+                }" alt="" >
             </div>
         </div>
       `;
@@ -142,37 +135,57 @@ function displayChamberMembers() {
 
     gridBtn.addEventListener("click", changeView.bind(gridBtn));
     listBtn.addEventListener("click", changeView.bind(listBtn));
+
+    document.addEventListener("DOMContentLoaded", function () {
+    // Get the current year
+    const currentYear = new Date().getFullYear();
+
+    // Update the year element
+    const yearElement = document.getElementById("year");
+    if (yearElement) {
+        yearElement.textContent = currentYear;
+    }
+
+    // Get the current date and time
+    const currentDate = new Date();
+
+    // Format the date as needed
+    const formattedDate = currentDate.toLocaleString();
+
+    // Update the last modified date element
+    const lastModifiedElement = document.getElementById("lastModified");
+    if (lastModifiedElement) {
+        lastModifiedElement.textContent = `Last Modification: ${formattedDate}`;
+    }
+});
 }
+document.addEventListener("DOMContentLoaded", function () {
+    // Get the current year
+    const currentYear = new Date().getFullYear();
+
+    // Update the year element
+    const yearElement = document.getElementById("year");
+    if (yearElement) {
+        yearElement.textContent = currentYear;
+    }
+
+    // Get the current date and time
+    const currentDate = new Date();
+
+    // Format the date as needed
+    const formattedDate = currentDate.toLocaleString();
+
+    // Update the last modified date element
+    const lastModifiedElement = document.getElementById("lastModified");
+    if (lastModifiedElement) {
+        lastModifiedElement.textContent = `Last Modification: ${formattedDate}`;
+    }
+});
+
+
 
 // //////////////////////////////////////////////
-function toggleNav() {
-    const toggleMenu = function () {
-        nav.classList.toggle("show-nav");
-    };
 
-    menuBtn.addEventListener("click", toggleMenu);
-}
-toggleNav();
-
-// ///////////////////////////////////////////////
-// The active page functionality - highlight the current  active
-// page
-function activePage() {
-    function setActiveLink() {
-        const navLinks = document.querySelectorAll(".nav-links");
-        const currentURL = window.location.href;
-
-        navLinks.forEach((link) => {
-            if (currentURL === link.href) {
-                link.classList.add("active");
-            } else {
-                link.classList.remove("active");
-            }
-        });
-    }
-    setActiveLink();
-}
-activePage();
 
 
 

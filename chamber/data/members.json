@@ -3,18 +3,20 @@
         {
             "name": "CABS",
             "address": "CABS Centre Gweru",
-            "phone": "+27 (11) 123-4567",
+            "phone": "+263 54 222 1362",
             "website": "https://www.cabs.co.zw/gweru",
             "image": "images/cabs.webp",
-            "membershipLevel": "images/gold.png"
+            "membershipLevel": "images/gold.webp",
+            "level": 2
         },
         {
             "name": "OKMART GWERU",
             "address": "Stand 8451, Gwelo Township Gweru",
-            "phone": "+263 054-25727/25764/25765",
+            "phone": "+263 54 257 27/25764/25765",
             "website": "https://okziminvestor.com/stores-locator-ok-mart-stores/",
             "image": "images/ok.webp",
-            "membershipLevel": "images/gold.png"
+            "membershipLevel": "images/gold.webp",
+            "level": 2
         },
         {
             "name": "Toyota",
@@ -22,7 +24,8 @@
             "phone": "+263-54-2221362",
             "website": "https://www.toyota.co.zw/en/dealership/toyota-zimbabwe/toyota-gweru-toyota",
             "image": "images/toyota.webp",
-            "membershipLevel": "images/bronze.png"
+            "membershipLevel": "images/bronze.webp",
+            "level": 1
         },
         {
             "name": "Zesa",
@@ -30,15 +33,17 @@
             "phone": "+263 (054) 2221616 /(054) 2221981 /(054) 2221982",
             "website": "https://www.zesaholdings.co.zw ",
             "image": "images/zesa.webp",
-            "membershipLevel": "images/silver.png"
+            "membershipLevel": "images/gold.webp",
+            "level": 2
         },
         {
             "name": "First Mutual",
             "address": "3rd Floor First Mutual Life Centre, Robert Mugabe Way, Gweru",
-            "phone": "+27 (51) 567-8901",
+            "phone": "+263 54 222 4930",
             "website": "https://www.firstmutual.co.zw",
             "image": "images/first-mutual.webp",
-            "membershipLevel": "images/gold.png"
+            "membershipLevel": "images/gold.webp",
+            "level": 2
         },
         {
             "name": "KFC GWERU ZIM",
@@ -46,24 +51,27 @@
             "phone": "+263 781282539",
             "website": "https://www.kfc.co.zw/en/store-locator/kfc_gweru_zim",
             "image": "images/kfc.webp",
-            "membershipLevel": "images/np.png"
+            "membershipLevel": "images/np.webp",
+            "level": 0
         },
         {
             "name": "COMMERCIAL BANK OF ZIMBABWE",
-            "address": "CBZ BUILDING, CNR ROBERT MUGABE/7TH STREET, GWERUy",
+            "address": "CBZ BUILDING, CNR ROBERT MUGABE/7TH STREET, GWERU",
             "phone": "+263 774 088 719",
             "website": "https://www.CBZ.co.zw",
-            "image": "images/cabs.webp",
-            "membershipLevel": "images/np.png"
+            "image": "images/cbz.webp",
+            "membershipLevel": "images/np.webp",
+            "level": 0
         },
         {
             "name": "Midlands Christian School",
             "address": "PO Box 1242 Long Road, New Christmas Gift, Gweru, Zimbabwe",
             "phone": "+263 254 222 4930 / +263 254 222 3153",
-            "website": "https://www.mcc.co.ac",
+            "website": "https://www.mcc.ac.zw",
             "image": "images/mcc.webp",
-            "membershipLevel": "images/silver.png"
+            "membershipLevel": "images/gold.webp",
+            "level": 2
+
         }
-        
     ]
 }

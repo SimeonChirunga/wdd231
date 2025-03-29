@@ -1,0 +1,492 @@
+#menu-button,
+header h1 {
+    text-align: left;
+    font-size: 1.5rem;
+    color: #0a0a0a
+}
+
+div.hero a,
+nav ul li a {
+    display: block;
+    text-decoration: none
+}
+
+div.cards .spot,
+nav ul {
+    padding: 0
+}
+
+.list .member-card figure div,
+div#banner.hide,
+div.list img:first-child,
+nav ul {
+    display: none
+}
+
+#menu-button,
+div#banner,
+div#theButtons,
+div.cards .spot,
+div.grid section {
+    text-align: center
+}
+
+#name1,
+#name2 {
+    padding-left: 1rem
+}
+
+#forecast div,
+.footer {
+    background-color: #f9dabb;
+    padding: 1rem
+}
+
+.spot span,
+div#banner,
+div.hero a,
+nav ul li.active a,
+section.gallery figcaption {
+    font-weight: 600
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: Oswald, sans-serif;
+    font-weight: 300;
+    color: #030303
+}
+
+#name2,
+h1 {
+    font-weight: 100;
+    align-content: center
+}
+
+header {
+    padding: .5rem;
+    background-color: #f9dabb;
+    border-bottom: 1px solid #6f8f86;
+    display: grid;
+    gap: 3.5rem;
+    grid-template-columns: 50px auto 48px
+}
+
+#forecast p.desc,
+header p {
+    color: #080808
+}
+
+header p {
+    margin: 0;
+    font-size: 1rem;
+    gap: 1.5rem
+}
+
+.spot a,
+div.hero a,
+main h1 {
+    color: #04261a
+}
+
+#menu-button {
+    background: #ffc499;
+    border: 1px solid rgba(0, 0, 0, .5);
+    width: 48px;
+    height: 48px;
+    padding-bottom: 5px
+}
+
+nav ul {
+    margin: 0;
+    list-style-type: none;
+    z-index: 99
+}
+
+nav ul.open {
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 150px;
+    background-color: #f9dabb;
+    margin: 0
+}
+
+nav ul li a {
+    color: #000;
+    padding: .75rem
+}
+
+nav ul li:hover a {
+    background-color: #04261a;
+    color: #fff
+}
+
+main h1 {
+    margin: 2vw
+}
+
+main h2 {
+    color: #0a0a0a;
+    margin: .5rem 2vw
+}
+
+main h3,
+main p {
+    color: #333;
+    margin: .5rem 2vw
+}
+
+div.hero {
+    width: 100%;
+    height: auto;
+    position: relative
+}
+
+div.hero img {
+    width: 100%;
+    height: auto
+}
+
+div.hero a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: .5rem 1rem;
+    background-color: #f9dabb;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #04261a
+}
+
+div.hero a:hover {
+    font-size: 150%
+}
+
+.current {
+    font-size: 1.2rem;
+    color: #070707
+}
+
+#name1,
+#name2,
+.footer,
+.member-card .member-info-box a,
+.member-card .member-info-box a:active,
+.member-card .member-info-box a:visited,
+h1 {
+    color: #000
+}
+
+#forecast {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 10px
+}
+
+#forecast div {
+    border: 1px solid #6f8f86
+}
+
+#forecast p.temp {
+    font-size: 2rem
+}
+
+div.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem 2vw
+}
+
+div.cards section {
+    border: 1px dashed #6f8f86;
+    width: 100%;
+    padding: 1rem 0
+}
+
+div.cards section h2 {
+    margin-top: 0
+}
+
+.spot img {
+    width: 100%;
+    display: block
+}
+
+.spot span {
+    background-color: #f9dabb;
+    display: block;
+    padding: .5rem 8px
+}
+
+.spot a {
+    display: block;
+    padding: .75rem 1rem;
+    background-color: #eee
+}
+
+div#banner {
+    background-color: #f9dabb;
+    padding: 1rem 2vw
+}
+
+section.gallery figure {
+    margin: 2rem 2vw
+}
+
+section.gallery figcaption {
+    text-align: center;
+    color: #666
+}
+
+section.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px
+}
+
+section.gallery .rocorn {
+    border-radius: 15px 150px
+}
+
+div#theButtons {
+    width: 100%
+}
+
+div#theButtons button.active {
+    background-color: #6f8f86
+}
+
+div#theButtons button {
+    margin: 0 1rem;
+    padding: .7rem 1rem;
+    border-radius: 10px;
+    border: 1px solid #6f8f86
+}
+
+div#members {
+    margin: 0 2vw
+}
+
+div.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center
+}
+
+div.grid section {
+    margin: 1rem 0;
+    border: 1px solid #6f8f86;
+    border-radius: 10px;
+    overflow: hidden
+}
+
+div.grid img:first-child {
+    width: 100%
+}
+
+div.grid h3,
+div.grid p {
+    margin: .2rem 0
+}
+
+div.list section {
+    display: grid;
+    grid-template-columns: auto auto auto auto 55px;
+    align-items: center;
+    margin: .5rem 0;
+    border: 1px solid #6f8f86;
+    border-radius: 10px;
+    overflow: hidden
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    width: 100%
+}
+
+#name1 {
+    font-size: 28px
+}
+
+#name2 {
+    font-size: 16px
+}
+
+#half-circle {
+    width: 20px;
+    height: 20px;
+    background-image: linear-gradient(to right, #000 50%, #fff 50%);
+    border-radius: 100%;
+    margin-top: 20px;
+    position: relative
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: normal;
+    text-align: left
+}
+
+.views-button-section,
+.views-button-section #grid-view {
+    background-color: #ffc499
+}
+
+.member-card,
+h1 {
+    text-align: center
+}
+
+.keynote-ticket {
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+    padding: 20px;
+    border-radius: 0cap;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1)
+}
+
+.keynote-ticket button {
+    background-color: #00f7ff;
+    border-radius: 50px;
+    color: #451111;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer
+}
+
+.keynote-ticket button:hover {
+    background-color: #0069d9
+}
+
+h1 {
+    font-size: 2em;
+    margin: .67em 0
+}
+
+.views-button-section {
+    margin-block: 1em;
+    padding-block: 1em;
+    padding-inline: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 2rem
+}
+
+.grid,
+.member-card .member-info-box {
+    display: grid
+}
+
+.grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-right: 60px
+}
+
+.views-button-section button:active {
+    border-color: #0f0;
+    outline: lime dotted 2px;
+    outline-offset: 0.2em
+}
+
+.views-button-section #list-view {
+    background-color: #ffc499;
+    color: #000
+}
+
+.member-card-section {
+    background-color: #fff;
+    margin-block: 1em;
+    padding-block: 1em;
+    width: 98%
+}
+
+.member-card {
+    width: 80%;
+    background-color: #ffc499;
+    display: flex;
+    flex-direction: column;
+    padding-block: 1em;
+    border-radius: 1rem;
+    border: 1px solid #000;
+    box-shadow: var(--box-shadow-all-4sides-cleaner);
+    margin-right: 40px;
+    height: 100%
+}
+
+.member-card figure div {
+    width: 50%
+}
+
+.member-card figure img {
+    width: 90%;
+    height: 90%
+}
+
+.member-card .member-info-box img,
+.member-card figure div {
+    margin: 0 auto
+}
+
+.member-card figure figcaption {
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    font-weight: 600
+}
+
+.list {
+    padding: 0
+}
+
+.list .member-card {
+    text-align: left;
+    border-radius: 0;
+    box-shadow: none
+}
+
+.list .member-card .member-info-box img {
+    margin: 0;
+    height: 100px
+}
+
+@media only screen and (min-width:37.5em) {
+    .logo-box {
+        width: 15rem
+    }
+
+    .member-card {
+        height: 90%;
+        width: 60%;
+        margin: 0;
+        justify-content: center
+    }
+
+    .list .member-card {
+        text-align: left;
+        border-radius: 0;
+        box-shadow: none;
+        flex-direction: row;
+        align-items: center;
+        gap: 2em
+    }
+
+    .list .member-card figure div {
+        display: none
+    }
+
+    .list .member-card .member-info-box {
+        display: flex;
+        align-items: center;
+        gap: 1em
+    }
+}
