@@ -22,13 +22,14 @@ header h1 {
     /* margin: 1rem; */
     color: #0a0a0a;
     font-size: 1.5rem;
+    text-align: left;
 }
 
 header p {
     
     margin: 0;
     color: #080808;
-    font-size: .87rem;
+    font-size: 1rem;
     gap: 1.5rem;
 }
 
@@ -512,6 +513,64 @@ h1 {
     margin: 0;
     /* width: 100px; */
     height: 100px;
+}
+
+/*Form Styling*/
+form {
+    margin: 1rem 2vw;
+}
+
+form label,
+form textarea {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+form textarea {
+    width: 300px;
+}
+
+form fieldset label {
+    margin: .5rem 0;
+}
+
+form fieldset {
+    margin-bottom: 1rem;
+    width: 300px;
+}
+
+form input[type='text'],
+form input[type='tel'],
+form input[type='email'] {
+    display: block;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #555;
+}
+
+form fieldset legend {
+    width: auto;
+    margin: 0 .1rem;
+    padding: 0 .5rem 2%;
+
+}
+
+form input:valid {
+    border-left: solid green 3px;
+}
+
+form input:invalid {
+    border-left: solid red 3px;
+}
+
+form input[type='submit'] {
+    width: 300px;
+    border: solid #333 1px;
+    padding: 1rem 0;
+    border-radius: 10px;
+    font-weight: 600;
+    background-color: #f9dabb;
+
 }
 
 @media only screen and (min-width: 37.5em) {

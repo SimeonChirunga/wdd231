@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gweru Chamber of Commerce Join Page">
+    <meta name="author" content="Simeon Chirunga">
+
+    <meta property="og:title" content="WDD 231 - Chamber - Simeon Chirunga">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://Simeonchirunga.github.io/wdd231/">
+    <meta property="og:description"
+        content="We are committed to helping businesses grow and prosper in Gweru. If you are a business owner or organization, we encourage you to join the Chamber of Commerce and take advantage of our many resources.">
+    <meta property="og:image" content="https://Simeonchirunga.github.io/wdd230/images/logo.png">
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.min.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <title>Gweru Chamber of Commerce Join Page</title>
+</head>
+
+<body>
+    <header>
+        <img src="images/gcc.webp" alt="Site Logo" width="80">
+
+        <div>
+            <h1>Gweru Chamber of Commerce</h1>
+            <p>City of Progress</p>
+        </div>
+        <nav>
+            <button id="menu-button">☰</button>
+            <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <span id="half-circle"></span>
+            </ul>
+        </nav>
+    </header>
+
+    </header>
+
+    <main>
+        <h1>Join the Chamber</h1>
+        <div class="join">
+            <section>
+                <h2>Become a Member</h2>
+                <form action="thankyou.html" method="get">
+                    <fieldset>
+                        <legend>New Member Registration</legend>
+
+                        <label>First Name* <input type="text" name="fname" required autocomplete="given-name"></label>
+                        <label>Last Name* <input type="text" name="lname" required autocomplete="family-name"> </label>
+                        <label>Title <input type="text" name="title" pattern="[A-Za-z -]{7,}" title="seven or more"
+                                autocomplete="organization-title"></label>
+                        <label>Email Address* <input type="email" name="email" placeholder="Simeonchir@gmail.com"
+                                required autocomplete="email"></label>
+                        <label>Phone Number* <input type="tel" name="phone" required autocomplete="tel"></label>
+                        <label>Company* <input type="text" name="busname" required autocomplete="organization"></label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend> Membership Level </legend>
+                        <label><input type="radio" name="level" value="not-for-profit"> NP Membership</label>
+                        <label><input type="radio" name="level" value="Bronze Membership"> Bronze Membership</label>
+                        <label><input type="radio" name="level" value="Silver Membership"> Silver Membership</label>
+                        <label><input type="radio" name="level" value="Gold Membership"> Gold Membership</label>
+                    </fieldset>
+
+                    <label>Business Description<textarea name="description"></textarea></label>
+                    <input name="today" value="xxx" type="hidden">
+
+
+                    <input type="submit" value="Apply">
+                </form>
+            </section>
+            <section>
+                <h2>Membership Level Details</h2>
+                <h3>NP Membership</h3>
+                <ul>
+                    <li>Vote</li>
+                </ul>
+                <p>FREE</p>
+                <h3>Bronze Membership</h3>
+                <ul>
+                    <li>Vote</li>
+                    <li>Merchandise Discounts</li>
+                </ul>
+                <p>$30</p>
+                <h3>Silver Membership</h3>
+                <ul>
+                    <li>Vote</li>
+                    <li>Merchandise Discounts</li>
+                    <li>Spotlight</li>
+                </ul>
+                <p>$60</p>
+                <h3>Gold Membership</h3>
+                <ul>
+                    <li>Vote at Meetings</li>
+                    <li>Merchandise Discounts</li>
+                    <li>Spotlight</li>
+                    <li>Presidential Election</li>
+                </ul>
+                <p>$100</p>
+            </section>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <div class="contact-box">
+            <p class="footer-captions">Gweru Chamber of Commerce</p>
+
+            <p>No. 45 Lingfield Gweru </p>
+            <p>Midlands Province</p>
+            <p>Zimbabwe</p>
+            <p>gweruchamberofcommerce@gmail.com</p>
+            <p>+263 777285306</p>
+
+        </div>
+
+        <div class="footer-socials">
+            <p class="footer-captions">Stay Connected</p>
+            <nav class="sociallinks">
+                <a href="https://facebook.com">
+                    <img src="images/facebook.webp" alt="Facebook">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="images/instagram.webp" alt="Instagram">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="images/twitter.webp" alt="Twitter">
+                </a>
+
+            </nav>
+
+        </div>
+        <div class="copyright-box">
+            <p>WDD231 Class Project</p>
+            <p>Simeon Chirunga</p>
+            <p> © <span id="year"></span> Gweru, Zimbabwe</p>
+            <p id="lastModified"></p>
+
+        </div>
+    </footer>
+    <script src="scripts/common.js"></script>
+    <script src="scripts/banner.js"></script>
+    <script src="scripts/weatherCurrent.js"></script>
+    <script src="scripts/weatherforecast.js"></script>
+    <script src="scripts/spotlight.js"></script>
+</body>
+
+</html>
