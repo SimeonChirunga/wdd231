@@ -1,0 +1,208 @@
+
+/* =============================================
+   Google Fonts
+   ============================================= */
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap');
+
+/* =============================================
+   Root Variables
+   ============================================= */
+:root {
+  /* Brand Colors */
+  --primary-color: #004080;           /* Thornhill Blue */
+  --secondary-color: #003366;         /* Darker Shade */
+  --accent1-color: #FFD700;           /* Gold Accent */
+  --accent2-color: #396E94;           /* Teal Accent */
+
+  /* Typography */
+  --heading-font: 'Segoe UI', sans-serif;
+  --paragraph-font: 'Segoe UI', sans-serif;
+
+  /* Text Colors */
+  --headline-on-white: var(--primary-color);
+  --headline-on-color: #ffffff;
+  --paragraph-on-white: #222222;
+  --paragraph-on-color: #ffffff;
+
+  /* Backgrounds */
+  --paragraph-bg-color: var(--primary-color);
+  --nav-bg-color: var(--primary-color);
+  --nav-link-color: #ffffff;
+  --nav-hover-bg-color: var(--secondary-color);
+  --nav-hover-link-color: var(--accent1-color);
+}
+
+/* =============================================
+   Base Reset & Layout
+   ============================================= */
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem;
+  font-family: var(--paragraph-font);
+  font-size: 18px;
+  text-align: center;
+  color: var(--paragraph-on-white);
+  background: #fafafa;
+}
+
+img {
+  display: block;
+  margin: 1rem auto;
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1rem 0;
+  font-family: var(--heading-font);
+  color: var(--headline-on-white);
+}
+
+hr {
+  height: 4px;
+  background: var(--accent1-color);
+  border: none;
+  margin: 3rem 0;
+}
+
+/* =============================================
+   Header
+   ============================================= */
+header {
+  background: var(--paragraph-bg-color);
+  padding: 2rem 1rem;
+  color: var(--headline-on-color);
+}
+
+header h1,
+header h2 {
+  margin: 0.5rem 0;
+  color: var(--headline-on-color);
+}
+
+/* =============================================
+   Overview & Branding Sections
+   ============================================= */
+section {
+  margin-bottom: 3rem;
+}
+
+.site-logo-text {
+  font-family: var(--heading-font);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: 1rem 0;
+}
+
+/* =============================================
+   Style Guide: Color Palette
+   ============================================= */
+.colors {
+  width: 100%;
+  max-width: 600px;
+  margin: 2rem auto;
+  border-collapse: collapse;
+}
+.colors th,
+.colors td {
+  padding: 1rem;
+  border: 1px solid #ddd;
+}
+.colors th {
+  background: #f0f0f0;
+  font-weight: 700;
+}
+.colors td .swatch {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+/* =============================================
+   Navigation
+   ============================================= */
+nav {
+  margin: 2rem auto;
+  background: var(--nav-bg-color);
+  display: inline-flex;
+  border-radius: 4px;
+  overflow: hidden;
+}
+nav a {
+  display: block;
+  padding: 1rem 1.5rem;
+  color: var(--nav-link-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: background var(--transition), color var(--transition);
+}
+nav a:hover,
+nav a:focus {
+  background: var(--nav-hover-bg-color);
+  color: var(--nav-hover-link-color);
+}
+
+/* =============================================
+   Site Map
+   ============================================= */
+.sitemap {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto auto auto;
+  gap: 0.5rem;
+  justify-items: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+.sitemap .sm-node {
+  background: #ccc;
+  padding: 1rem;
+  border-radius: 4px;
+  width: 100%;
+}
+
+/* =============================================
+   Content Outline
+   ============================================= */
+main > section p,
+main > section ul {
+  max-width: 800px;
+  margin: 0.5rem auto 1.5rem;
+  text-align: left;
+}
+main > section ul {
+  list-style: disc inside;
+}
+
+/* =============================================
+   Wireframes Section
+   ============================================= */
+.wireframe {
+  margin: 2rem auto;
+}
+.wireframe img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  max-width: 90%;
+  margin-bottom: 1rem;
+}
+
+/* =============================================
+   Responsive Adjustments
+   ============================================= */
+@media (max-width: 768px) {
+  body {
+    padding: 2rem;
+  }
+  nav {
+    flex-direction: column;
+  }
+  .sitemap {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

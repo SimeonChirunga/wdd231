@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thornhill High School | Student Resources</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo-text">Thornhill High School</a>
+      <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="nav" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Home</a></li>
+          <li><a href="student-resources.html" class="nav__link nav__link--active">Resources</a></li>
+          <li><a href="events.html" class="nav__link">Events</a></li>
+          <li><a href="news.html" class="nav__link">News</a></li>
+          <li><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="container section">
+    <h2>Student Resources</h2>
+    <p>Explore our carefully curated resources to support your learning journey.</p>
+    <input type="text" id="resource-search" class="list-search" placeholder="Search resources…" aria-label="Search resources">
+    <ul id="resource-list" class="list">
+      <!-- JS will populate -->
+    </ul>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p>&copy; 2025 Thornhill High School</p>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <ul>
+          <li><a href="student-resources.html">Resources</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="social">
+        <a href="#" aria-label="Facebook"><img src="images/facebook.png" alt="Facebook"></a>
+        <a href="#" aria-label="Twitter"><img src="images/twitter.png" alt="Twitter"></a>
+        <a href="#" aria-label="Instagram"><img src="images/instagram.png" alt="Instagram"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script>
+    // Populate and filter resources
+    const resources = [
+      { title: 'Library Catalog', url: '#', desc: 'Search our library collection.' },
+      { title: 'Online Textbooks', url: '#', desc: 'Access textbooks digitally.' },
+      { title: 'Study Guides', url: '#', desc: 'Download exam preparation guides.' }
+    ];
+    function displayResources(list) {
+      const ul = document.getElementById('resource-list');
+      ul.innerHTML = '';
+      list.forEach(r => {
+        ul.innerHTML += `<li><a href="${r.url}"><strong>${r.title}</strong></a><p>${r.desc}</p></li>`;
+      });
+    }
+    document.getElementById('resource-search')
+      .addEventListener('input', e => displayResources(
+        resources.filter(r => r.title.toLowerCase().includes(e.target.value.toLowerCase()))
+      ));
+    // initial load
+    displayResources(resources);
+  </script>
+</body>
+</html>

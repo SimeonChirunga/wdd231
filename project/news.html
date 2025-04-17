@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thornhill High School | News &amp; Blog</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo-text">Thornhill High School</a>
+      <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="nav" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Home</a></li>
+          <li><a href="student-resources.html" class="nav__link">Resources</a></li>
+          <li><a href="events.html" class="nav__link">Events</a></li>
+          <li><a href="news.html" class="nav__link nav__link--active">News</a></li>
+          <li><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="container section">
+    <h2>School News &amp; Blog</h2>
+    <div id="posts"></div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p>&copy; 2025 Thornhill High School</p>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <ul>
+          <li><a href="student-resources.html">Resources</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="social">
+        <a href="#" aria-label="Facebook"><img src="images/facebook.png" alt="Facebook"></a>
+        <a href="#" aria-label="Twitter"><img src="images/twitter.png" alt="Twitter"></a>
+        <a href="#" aria-label="Instagram"><img src="images/instagram.png" alt="Instagram"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script>
+    const posts = [
+      { date: '2025-04-01', headline: 'Student Achieves Top Honors', content: 'Congratulations to Jane Doe for scoring top marks in national exams.' },
+      { date: '2025-03-20', headline: 'Robotics Club Wins Award', content: 'Our team secured first place at the regional robotics challenge.' }
+    ];
+    function displayPosts() {
+      const container = document.getElementById('posts');
+      container.innerHTML = '';
+      posts.forEach(p => {
+        container.innerHTML += `
+          <article class="card">
+            <h3>${p.headline}</h3>
+            <time datetime="${p.date}">${p.date}</time>
+            <p>${p.content}</p>
+          </article>
+        `;
+      });
+    }
+    displayPosts();
+  </script>
+</body>
+</html>
